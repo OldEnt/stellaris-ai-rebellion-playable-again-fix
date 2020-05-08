@@ -15,6 +15,6 @@ trigger = {
 		}
 [/code]
 
-Source on GitHub: https://github.com/OldEnt/ai-rebellion-playable-again-fix
+Source on GitHub: https://github.com/OldEnt/stellaris-ai-rebellion-playable-again-fix
 
 [url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
