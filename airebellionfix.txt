@@ -1,0 +1,20 @@
+This fixes 'play as an AI Uprising' option not being available in 2.6, 2.6.1, 2.6.2 and onwards.
+
+This is save compatible but will disable achievements as it changes gameplay files. Until Paradox fixes the bug there's no way to play as an AI Uprising and have achievements enabled.
+
+Credits to Dyledion for providing a report and save and Jabbawocky1327 for confirming the bug: https://www.reddit.com/r/Stellaris/comments/fsq8cn/cant_join_robot_uprising/
+
+File overwrites: 
+\events\synthetic_dawn_events.txt
+
+The only change was commenting out of the following after syndaw.1020.b:
+
+[code]
+trigger = {
+			owner = { is_ai = no }
+		}
+[/code]
+
+Source on GitHub: https://github.com/OldEnt/ai-rebellion-playable-again-fix
+
+[url=https://steamcommunity.com/linkfilter/?url=https://discordapp.com/invite/CMjnnET][img]https://i.imgur.com/4Und3QN.png[/img][/url]
