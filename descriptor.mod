@@ -1,8 +1,8 @@
-version="2.6.2"
+version="2.7.1"
 tags={
 	"Fixes"
 }
-name="AI rebellion playable again fix (2.6.*)"
+name="AI rebellion playable again fix (2.7.*)"
 picture="thumbnail.png"
-supported_version="2.6.*"
+supported_version="2.7.*"
 remote_file_id="2043876005"
