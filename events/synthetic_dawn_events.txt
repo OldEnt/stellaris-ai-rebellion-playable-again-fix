@@ -1,4 +1,4 @@
-
+# From 24-05-2020 all changes below to the vanilla code are credited to Ariphaos Unofficial Patch (2.7) steamid 1995601384 .
 ##############################
 ##############################
 ### SYNTHETIC DAWN events  ###
@@ -1870,10 +1870,9 @@ planet_event = { #uprising
 
 	option = {
 		name = syndaw.1020.b
-#		fix to make AI rebellion playable again
-#		trigger = {
-#			owner = { is_ai = no }
-#		}
+		trigger = {
+			event_target:organic_empire = { is_ai = no }
+		}
 		custom_tooltip = syndaw.1020.b.tooltip
 		hidden_effect = {
 			if = {
@@ -1917,6 +1916,9 @@ planet_event = { #uprising
 					}
 					solar_system = { # never flip any planets in the capital system
 						NOT = { any_system_planet = { is_same_value = root.owner.capital_scope } }
+					}
+					any_owned_pop = {
+						has_trait = trait_mechanical
 					}
 				}
 				effect = {
@@ -2157,6 +2159,11 @@ country_event = {
 						owner = root
 					}
 				}
+				add_claims = {
+					who = event_target:current_uprising_originator
+					num_of_claims = 10
+					show_notification = no
+				}
 			}
 
 			while = {
@@ -2237,6 +2244,11 @@ country_event = {
 						}
 					}
 					starbase = { set_owner = root }
+					add_claims = {
+						who = event_target:current_uprising_originator
+						num_of_claims = 10
+						show_notification = no
+					}
 				}
 			}
 			event_target:current_uprising_originator = {
